@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admin-style.css">
+    <title>Admin Dashboard | Zaidan Paradise</title>
+</head>
+<body>
+    <nav class="admin__nav">
+        <div class="logo">
+            <span>ZP</span>
+            <p>ADMIN</p>
+        </div>
+        <ul class="admin__links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="dashboard" class="admin__section">
+            <h1>Welcome, Admin</h1>
+            <div class="stats__grid">
+                <div class="stats__card">
+                    <h3>84</h3>
+                    <p>Total Bookings</p>
+                </div>
+                <div class="stats__card">
+                    <h3>12</h3>
+                    <p>Available Rooms</p>
+                </div>
+                <div class="stats__card">
+                    <h3>150k</h3>
+                    <p>Revenue This Month</p>
+                </div>
+                <div class="stats__card">
+                    <h3>3</h3>
+                    <p>Pending Inquiries</p>
+                </div>
+            </div>
+            <div class="recent__activities">
+                <h2>Recent Activities</h2>
+                <ul>
+                    <li>Booking #001 confirmed for 12th Jan 2025</li>
+                    <li>New inquiry received for Family Suite</li>
+                    <li>Menu item 'Eggs & Bacon' updated</li>
+                    <li>Room 'Luxury Penthouse' added</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="bookings" class="admin__section">
+            <h2>Manage Bookings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Guest Name</th>
+                        <th>Arrival</th>
+                        <th>Departure</th>
+                        <th>Room Type</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Ade Dwi</td>
+                        <td>12 Jan 2025</td>
+                        <td>15 Jan 2025</td>
+                        <td>Deluxe Suite</td>
+                        <td>Confirmed</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Pandu Satya</td>
+                        <td>14 Jan 2025</td>
+                        <td>18 Jan 2025</td>
+                        <td>Family Suite</td>
+                        <td>Pending</td>
+                        <td>
+                            <button>Approve</button>
+                            <button>Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>Syifa Pajril</td>
+                        <td>20 Jan 2025</td>
+                        <td>22 Jan 2025</td>
+                        <td>Luxury Penthouse</td>
+                        <td>Confirmed</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Cancel</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="rooms" class="admin__section">
+            <h2>Manage Rooms</h2>
+            <button class="btn">Add New Room</button>
+            <div class="room__list">
+                <div class="room__item">
+                    <h4>Deluxe Suite</h4>
+                    <p>Rp500k / night</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="room__item">
+                    <h4>Family Suite</h4>
+                    <p>Rp750k / night</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="room__item">
+                    <h4>Luxury Penthouse</h4>
+                    <p>Rp1M / night</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="admin__section">
+            <h2>Manage Menu</h2>
+            <button class="btn">Add New Item</button>
+            <div class="menu__list">
+                <div class="menu__item">
+                    <h4>Eggs & Bacon</h4>
+                    <p>A delicious breakfast option.</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="menu__item">
+                    <h4>Chia Oatmeal</h4>
+                    <p>Wholesome and nutritious.</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="menu__item">
+                    <h4>Fruit Parfait</h4>
+                    <p>A mix of fresh fruits and yogurt.</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="menu__item">
+                    <h4>Steak & Fries</h4>
+                    <p>Perfectly grilled steak with a side of crispy fries.</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="admin__section">
+            <h2>Manage News</h2>
+            <button class="btn">Add New Article</button>
+            <div class="news__list">
+                <div class="news__item">
+                    <h4>Exploring Culinary Gems</h4>
+                    <p>10th January 2025</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="news__item">
+                    <h4>Balancing Mind, Body, and Soul</h4>
+                    <p>15th January 2025</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <div class="news__item">
+                    <h4>Introducing Our New Spa</h4>
+                    <p>20th January 2025</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="settings" class="admin__section">
+            <h2>Settings</h2>
+            <p>Manage website settings and configurations.</p>
+            <form>
+                <div class="setting__group">
+                    <label for="website-name">Website Name</label>
+                    <input type="text" id="website-name" value="Zaidan Paradise">
+                </div>
+                <div class="setting__group">
+                    <label for="contact-email">Contact Email</label>
+                    <input type="email" id="contact-email" value="info@zaidanparadise.com">
+                </div>
+                <div class="setting__group">
+                    <label for="theme-color">Theme Color</label>
+                    <input type="color" id="theme-color" value="#4CAF50">
+                </div>
+                <button class="btn">Update Settings</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="admin-main.js"></script>
+</body>
+</html>

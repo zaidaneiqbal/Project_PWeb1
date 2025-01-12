@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #0f1a2c;
+    --secondary-color: #f6ac0f;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f8fafc;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Playfair Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header-font);
+}
+
+body {
+    background: url('../images/bc6.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(246, 172, 15, 0.5), 0 0 20px rgba(246, 172, 15, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(246, 172, 15, 0.8), 0 0 40px rgba(246, 172, 15, 0.8);
+    }
+}
+
+.hotel-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(246, 172, 15, 0.8);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+#password {
+    padding-right: 40px;
+}
+
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn {
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: var(--primary-color);
+}
+
+.signup-link {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.signup-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.social{
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.social-login a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 14px;
+    font-family: var(--header-font);
+}
+
+.google-btn {
+    background-color: var(--secondary-color);
+}
+
+.google-btn:hover {
+    background: var(--primary-color);
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
